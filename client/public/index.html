@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+
+    <!-- App shell styles -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/sanitize.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/basscss.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/style.css">
+  </head>
+  <body>
+    <!-- Handle javascript disabled -->
+    <noscript>
+      <p>Please, enable JavaScript in your browser :)</p>
+    </noscript>
+
+    <header class="fixed top-0 z1 flex items-center">
+      <div id="header-left" class="header__btn no--select"></div>
+      <div id="header-title" class="header__title no--select flex-auto center"></div>
+      <div id="header-right" class="header__btn no--select"></div>
+    </header>
+
+    <div class="flex justify-around app__outer">
+      <div class="app__container px2 pt4">
+        <div class="flex flex-column justify-between">
+          <div id="main"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offline toast msg -->
+    <div class="fixed toast__container"></div>
+
+    <script src="%PUBLIC_URL%/js/toast.js"></script>
+    <script src="%PUBLIC_URL%/js/offline.js"></script>
+  </body>
+</html>
