@@ -8,7 +8,7 @@ The project includes the following libraries/functionality
 - Express
 - Mongoose
 - GraphQL
-- Authentication: passwordless via JWT
+- Authentication: via JWT
 - ES6 syntax
 - service workers
 
