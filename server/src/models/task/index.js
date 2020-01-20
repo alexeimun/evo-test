@@ -42,7 +42,7 @@ schema.statics.createTask = async function (form) {
 
 const Task = mongoose.model('Task', schema);
 
-const titledVal = Joi.string().min(MIN_STRING_LENGTH).max(MAX_STRING_LENGTH).required(); // eslint-disable-line
+const titleVal = Joi.string().min(MIN_STRING_LENGTH).max(MAX_STRING_LENGTH).required(); // eslint-disable-line
 const expiresAtVal = Joi.string().required(); // eslint-disable-line
 const priorityVal = Joi.required(); // eslint-disable-line
 
