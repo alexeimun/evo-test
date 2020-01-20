@@ -48,7 +48,7 @@ const priorityVal = Joi.required(); // eslint-disable-line
 
 const validateTask = (task) => {
   const joiSchema = {
-    title: titledVal,
+    title: titleVal,
     priority: priorityVal,
     expiresAt: expiresAtVal,
   };
