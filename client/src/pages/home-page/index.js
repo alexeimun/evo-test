@@ -60,7 +60,6 @@ const HomePage = ({ curUser }) => {
     const classes = useStyles();
     const {error, data, loading, refetch} = useQuery(tasksQuery);
     const [criteria, setCriteria] = React.useState('');
-    const [toastMsg, setToastMsg] = React.useState('');
     const [popupOpen, setPopupOpen] = React.useState(false);
 
     const handleChange = ({ target }) => {
